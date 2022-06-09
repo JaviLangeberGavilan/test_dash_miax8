@@ -121,4 +121,4 @@ def update_graph(tck, market):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host="0.0.0.0", debug=False, port=8080)
