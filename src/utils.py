@@ -23,7 +23,7 @@ class ApiBmeHandler:
     def __init__(self, market):
         self.url_base = 'https://miax-gateway-jog4ew3z3q-ew.a.run.app'
         self.competi = 'mia_8'
-        self.user_key = 'AIzaSyAKdNDiSWfA34KriNalTyAPIXJogTrYW1E'
+        self.user_key = os.environ['KEY_MIAX']
         self.market = market
         
     def get_ticker_master(self):
